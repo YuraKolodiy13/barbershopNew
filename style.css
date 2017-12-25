@@ -1,21 +1,25 @@
 *{
     margin: 0;
     padding: 0;
+    list-style: none;
 }
-header{
+.headerMain{
     background-color: #000;
     padding: 25px 0;
 }
-nav{
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+.flex{
     display: flex;
     justify-content: space-between;
-    width: 1100px;
-    margin: 0 auto;
 }
-.nav__wrapper{
+
+.navMain__wrapper{
     display: flex;
 }
-.nav__wrapper a{
+.navMain__wrapper a{
     margin-right: 50px;
     display: block;
 }
@@ -25,19 +29,15 @@ main{
     background-size: cover;
     padding: 100px 0;
 }
-.main__wrapper{
-    width: 1100px;
-    margin: 0 auto;
-}
 .logo{
     text-align: center;
 }
-.description{
+.features{
     color: #fff;
     display: flex;
     justify-content: space-between;
 }
-.info, .contacts{
+.indexContent{
     width: 1100px;
     margin: 0 auto 50px;
     background-color: #fff;
@@ -46,6 +46,14 @@ main{
     display: flex;
     justify-content: space-between;
 }
-.info>div{
+.indexContent:only-child{
     width: 50%;
+}
+.footer{
+    background: url("img/footer-bg.jpg");
+    color: #fff;
+}
+.footer>.container{
+    display: flex;
+    justify-content: space-between;
 }
