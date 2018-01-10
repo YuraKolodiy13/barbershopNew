@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Рамки и треугольники, часть 2</title>
+    <meta charset="utf-8">
+    <!--<base href="/assets/course88/">-->
+    <!--<link href="style.css" rel="stylesheet">-->
+    <style>
+        [class^="arrow"] {
+            display: inline-block;
+            width: 0;
+            height: 0;
+            margin: 30px;
+        }
+
+        .arrow-bottom {
+            border: 100px solid #ffffff;
+            border-top-color: #0074d9;
+            border-bottom: 0;
+            border-left-color: transparent;
+            border-right-color: transparent;
+        }
+
+        .arrow-left {
+            border: 100px solid #ffffff;
+            border-right-color: #0074d9;
+            border-bottom-color: transparent;
+            border-left: 0;
+            border-top-color: transparent;
+        }
+        .arrow-top-right {
+            border: 100px solid #ffffff;
+            border-top-color: #0074d9;
+            border-bottom: 0;
+            border-right: 0;
+            border-left-color: transparent;
+        }
+
+        .arrow-bottom-left {
+            border: 100px solid #ffffff;
+            border-top: 0;
+            border-left: 0;
+            border-right-color: transparent;
+            border-bottom-color: #0074d9;
+        }
+        .arrow-right-long {
+            position: relative;
+            width: 200px;
+            height: 30px;
+            margin: 150px auto;
+            background: #0074d9;
+        }
+
+        .arrow-right-long::after {
+            content: "";
+            position: absolute;
+            border: 40px solid #fff;
+            top: -25px;
+            right: -30px;
+            border-right: 0;
+            border-left-color: #0074d9;
+            border-top-color: transparent;
+            border-bottom-color: transparent;
+        }
+        .arrow-round {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 100px auto;
+            border: 50px solid #0074d9;
+            border-radius: 50%;
+            border-right-color: transparent;
+        }
+
+        .arrow-round::after {
+            content: "";
+            position: absolute;
+            border: 100px solid #fff;
+            border-bottom-color: #0074d9;
+            top: -45px;
+            left: 130px;
+            border-right: 0;
+            border-top: 0;
+            border-left-color: transparent;
+        }
+    </style>
+</head>
+<body class="geometry">
+    <div class="arrow-bottom"></div>
+    <div class="arrow-left"></div>
+    <div class="arrow-top-right"></div>
+    <div class="arrow-bottom-left"></div>
+    <div class="arrow-right-long"></div>
+    <div class="arrow-round"></div>
+</body>
+</html>
