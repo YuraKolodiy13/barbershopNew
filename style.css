@@ -3,9 +3,13 @@
     padding: 0;
     list-style: none;
 }
+body{
+    font-family: "PTSans Narrow", sans-serif;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
 .headerMain{
     background-color: #000;
-    padding: 25px 0;
 }
 .container {
     max-width: 1100px;
@@ -18,10 +22,19 @@
 
 .navMain__wrapper{
     display: flex;
+    justify-content: flex-start;
 }
-.navMain__wrapper a{
-    margin-right: 50px;
+
+.headerMain a{
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+    text-decoration: none;
     display: block;
+    padding: 25px 20px;
+}
+.headerMain a:hover{
+    background-color: #242424;
 }
 
 main{
@@ -36,18 +49,90 @@ main{
     color: #fff;
     display: flex;
     justify-content: space-between;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.features__item{
+    width: 30%;
+}
+.features__name{
+    font-size: 30px;
+    line-height: 42px;
+    padding-bottom: 30px;
+    display: block;
+}
+.features__name::after{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #f7f4f1;
+    transform: rotate(45deg);
+    margin: 20px auto 0 auto;
+}
+.features p{
+    font-size: 14px;
+    line-height: 24px;
+    color: #f7f4f1;
 }
 .indexContent{
     width: 1100px;
     margin: 0 auto 50px;
-    background-color: #fff;
-    padding: 50px;
+    background: url('img/line.png') no-repeat, url('img/content-bg.png');
+    background-position: 50% 50%;
+    padding: 55px 75px;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
 }
-.indexContent:only-child{
-    width: 50%;
+.indexContent time,
+.indexContent__name,
+.indexContent p{
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 5px;
+}
+.indexContent li{
+    margin-bottom: 30px;
+}
+.indexContent__title{
+    font-size: 30px;
+    line-height: 42px;
+    margin-bottom: 35px;
+}
+.indexContent__left {
+    width: 45%;
+}
+.indexContent__right{
+    width: 35%;
+}
+.gallery__content{
+    margin-bottom: 35px;
+}
+.gallery__content img{
+    border: 10px solid #fff;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+.gallery__btn{
+    display: flex;
+    justify-content: space-between;
+}
+.btn{
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    background-color: #000;
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    width: 140px;
+    padding: 10px 0;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 .footer{
     background: url("img/footer-bg.jpg");
