@@ -78,7 +78,7 @@ main{
 .indexContent{
     width: 1100px;
     margin: 0 auto 50px;
-    background: url('img/line.png') no-repeat, url('img/content-bg.png');
+    background: url('img/line.png') no-repeat, #fff url('img/content-bg.png');
     background-position: 50% 50%;
     padding: 55px 75px;
     box-sizing: border-box;
