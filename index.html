@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Барбершоп "Бородинский"</title>
     <link rel="icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
@@ -12,16 +13,20 @@
         <div class="container flex">
             <nav class="navMain">
                 <ul class="navMain__wrapper">
-                    <li><a href="">ИНФОРМАЦИЯ</a></li>
-                    <li><a href="">НОВОСТИ</a></li>
-                    <li><a href="">ПРАЙС-ЛИСТ</a></li>
-                    <li><a href="">МАГАЗИН</a></li>
-                    <li><a href="">КОНТАКТЫ</a></li>
+                    <li><a href="">Информация</a></li>
+                    <li><a href="">Новости</a></li>
+                    <li><a href="">Прайс-лист</a></li>
+                    <li><a href="">Магазин</a></li>
+                    <li><a href="">КонтактЫ</a></li>
                 </ul>
             </nav>
             <div class="userBlock">
-                <a href="" class="userBlock__login">ВХОД</a>
+                <a href="" class="userBlock__login">Вход</a>
             </div>
+            <div class="icon">
+                <span></span>
+            </div>
+            <!--<a class="icon" href="javascript:void(0)" style="font-size: 15px">&#9776</a>-->
         </div>
     </header>
 
@@ -32,7 +37,7 @@
             </div>
             <section class="features">
                 <div class="features__item">
-                    <b class="features__name">БЫСТРО</b>
+                    <b class="features__name">БЫстро</b>
                     <p>МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ ОБЛАДЕТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!</p>
                 </div>
                 <div class="features__item">
@@ -87,17 +92,25 @@
                     <p>ВРЕМЯ РАБОТЫ:<br>
                         ПН — ПТ: С 10:00 ДО 22:00<br>
                         СБ — ВС: С 10:00 ДО 19:00</p>
-                    <a href="" class="btn">Как проехать</a>
+                    <a href="" class="btn showMap">Как проехать</a>
                     <a href="" class="btn">Обратная связь</a>
                 </div>
                 <div class="indexContent__right">
                     <h2 class="indexContent__title">ЗАПИСАТЬСЯ</h2>
                     <p>УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
                     <form action="" class="indexContent__form" method="post">
-                        <input type="text" name="date" value="" placeholder="Дата">
-                        <input type="text" name="time" value="" placeholder="Время">
-                        <input type="text" name="name" value="" placeholder="Ваше имя">
-                        <input type="tel" name="phone" value="" placeholder="Телефон">
+                        <label for="date">Дата
+                            <input type="text" name="date" value="" placeholder="08.10.2017" id="date">
+                        </label>
+                        <label for="time">Время
+                            <input type="text" name="time" value="" placeholder="10:00" id="time">
+                        </label>
+                        <label for="name">Ваше имя
+                            <input type="text" name="name" value="" placeholder="Борода" id="name">
+                        </label>
+                        <label for="tel">Телефон
+                            <input type="tel" name="phone" value="" placeholder="+7 123 456-78-90" id="tel">
+                        </label>
                         <button type="submit" class="btn long">Отправить</button>
                     </form>
                 </div>
@@ -128,5 +141,13 @@
         </div>
     </footer>
 
+    <div class="container">
+        <div class="modal__maps">
+            <img src="img/maps.jpg" alt="">
+            <button class="close">close</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
 </body>
 </html>
