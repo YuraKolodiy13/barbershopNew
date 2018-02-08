@@ -13,20 +13,18 @@
         <div class="container flex">
             <nav class="navMain">
                 <ul class="navMain__wrapper">
+                    <li><a class="logoSmall"><img src="img/logoSmall.png" alt=""></a></li>
                     <li><a href="">Информация</a></li>
                     <li><a href="">Новости</a></li>
-                    <li><a href="">Прайс-лист</a></li>
+                    <li><a href="price.html">Прайс-лист</a></li>
                     <li><a href="">Магазин</a></li>
                     <li><a href="">КонтактЫ</a></li>
+                    <li><a class="icon" href="javascript:void(0)" style="font-size: 15px">&#9776</a></li>
                 </ul>
             </nav>
             <div class="userBlock">
                 <a href="" class="userBlock__login">Вход</a>
             </div>
-            <div class="icon">
-                <span></span>
-            </div>
-            <!--<a class="icon" href="javascript:void(0)" style="font-size: 15px">&#9776</a>-->
         </div>
     </header>
 
@@ -114,6 +112,10 @@
                         <button type="submit" class="btn long">Отправить</button>
                     </form>
                 </div>
+                <div class="modal__maps">
+                    <img src="img/maps.jpg" alt="">
+                    <button class="close">close</button>
+                </div>
             </div>
         </div>
     </main>
@@ -141,13 +143,20 @@
         </div>
     </footer>
 
-    <div class="container">
-        <div class="modal__maps">
-            <img src="img/maps.jpg" alt="">
-            <button class="close">close</button>
-        </div>
+    <div class="modal__popup">
+        <h2>ЛИЧНЫЙ КАБИНЕТ</h2>
+        <p>ВВедите пожалуйста свой логин и пароль</p>
+        <form action="" method="post">
+            <input type="text" placeholder="ЛОГИН">
+            <input type="password" placeholder="ПАРОЛЬ">
+            <div class="modal__wrapper">
+                <label for="rememberMe"><input type="checkbox" id="rememberMe">ЗАПОМНИТЕ МЕНЯ</label>
+                <a href="#">Я ЗАБЫЛ ПАРОЛЬ!</a>
+            </div>
+            <button type="submit" class="btn long">ВОЙТИ</button>
+        </form>
+        <button class="close">close</button>
     </div>
-
     <script src="main.js"></script>
 </body>
 </html>

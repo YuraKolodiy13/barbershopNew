@@ -1,14 +1,23 @@
 const showMap = document.querySelector('.showMap');
+const userLogin = document.querySelector('.userBlock__login');
 const modalMaps = document.querySelector('.modal__maps');
-const close = document.querySelector('.close');
+const modalPopup = document.querySelector('.modal__popup');
+const close = document.querySelectorAll('.close');
 
-showMap.addEventListener('click', function (e) {
-    e.preventDefault();
-    modalMaps.style.display = 'block';
+document.body.addEventListener('click', function (e) {
+    let target = e.target;
+    if(!target.classList.contains('close')) return;
+    target.parentNode.style.display = 'none';
 });
-close.addEventListener('click', function (e) {
+if(showMap){
+    showMap.addEventListener('click', function (e) {
+        e.preventDefault();
+        modalMaps.style.display = 'block';
+    });
+}
+userLogin.addEventListener('click', function (e) {
     e.preventDefault();
-    modalMaps.style.display = 'none';
+    modalPopup.style.display = 'block';
 });
 
 const icon = document.querySelector('.icon');
@@ -16,5 +25,4 @@ const headerMain = document.querySelector('.headerMain');
 
 icon.addEventListener('click', function () {
     headerMain.classList.toggle('responsive');
-    icon.classList.toggle('icon-open');
 });
